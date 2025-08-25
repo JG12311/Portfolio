@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio de João Gabriel Breganon Ferreira: estudante de Engenharia da Computação na PUC-Campinas, projetos e contato.">
+    <title>Portfólio • João Gabriel Breganon Ferreira</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container nav">
+            <a href="#inicio" class="brand" aria-label="Ir para o início">João Gabriel</a>
+            <button class="nav-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+            <nav class="nav-menu" aria-label="Navegação principal">
+                <a href="#sobre">Sobre</a>
+                <a href="#experiencia">Experiência</a>
+                <a href="#projetos">Projetos</a>
+                <a href="#skills">Skills</a>
+                <a href="#contato" class="cta">Contato</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="inicio">
+        <section class="hero container">
+            <div class="hero-text">
+                <h1>Olá, eu sou <span>João Gabriel Breganon Ferreira</span></h1>
+                <p class="subtitle">Estudante de Engenharia da Computação na PUC-Campinas, interessado em desenvolvimento web e em construir projetos com boa performance e acessibilidade.</p>
+                <div class="hero-ctas">
+                    <a href="#projetos" class="btn primary">Ver projetos</a>
+                    <a href="curriculo.pdf" class="btn" download>Baixar CV</a>
+                </div>
+                <div class="meta">
+                    <span>Ainda sem experiência profissional</span>
+                    <span>•</span>
+                    <a href="#contato">Aberto a estágio e projetos</a>
+                </div>
+            </div>
+            <div class="hero-media">
+                <img src="5bf2fb43-cac8-4379-a0bb-786c321410c5.jpg" alt="Foto de João Gabriel Breganon Ferreira" class="hero-photo">
+            </div>
+        </section>
+
+        <section id="sobre" class="section container">
+            <h2>Sobre</h2>
+            <p>
+                Sou estudante de <strong>Engenharia da Computação</strong> na <strong>PUC-Campinas</strong>. Estou começando minha trajetória em
+                <strong>desenvolvimento web</strong> e, apesar de <strong>ainda não ter experiência profissional</strong>, venho praticando com
+                projetos pessoais e acadêmicos, sempre buscando <strong>boas práticas</strong> de acessibilidade, performance e organização de código.
+            </p>
+        </section>
+
+        <section id="experiencia" class="section container">
+            <h2>Experiência</h2>
+            <div class="timeline">
+                <article class="job">
+                    <header>
+                        <h3>Em busca da primeira oportunidade</h3>
+                        <span>Atual</span>
+                    </header>
+                    <ul>
+                        <li>Ainda sem experiência profissional formal.</li>
+                        <li>Aberto a <strong>estágio</strong> e projetos para aprender e contribuir.</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section id="projetos" class="section container">
+            <h2>Projetos</h2>
+            <div class="grid projects">
+                <article class="card">
+                    <div class="card-header">
+                        <h3>Portfólio Pessoal</h3>
+                        <span class="pill">HTML • CSS • JS</span>
+                    </div>
+                    <p>Este site. Foco em layout responsivo, acessibilidade e organização.</p>
+                    <div class="card-actions">
+                        <a href="#inicio">Topo</a>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card-header">
+                        <h3>Projeto Exemplo</h3>
+                        <span class="pill">Em construção</span>
+                    </div>
+                    <p>Reservado para adicionar um projeto futuro com link de demo e repositório.</p>
+                    <div class="card-actions">
+                        <a href="#">Demo</a>
+                        <a href="#">Código</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="skills" class="section container">
+            <h2>Skills</h2>
+            <ul class="skills">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Git e GitHub</li>
+                <li>Responsividade</li>
+                <li>Boas práticas</li>
+            </ul>
+        </section>
+
+        <section id="contato" class="section container">
+            <h2>Contato</h2>
+            <p>Vamos conversar? Estou aberto a oportunidades de estágio e projetos.</p>
+            <div class="contact">
+                <a class="btn primary" href="mailto:fjoao28370@gmail.com">Enviar email</a>
+                <a class="btn" href="https://www.linkedin.com/in/jo%C3%A3o-gabriel-breganon-ferreira-341679343" target="_blank" rel="noopener">LinkedIn</a>
+                <a class="btn" href="https://github.com/JG12311" target="_blank" rel="noopener">GitHub</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>© <span id="year"></span> João Gabriel Breganon Ferreira. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
