@@ -287,8 +287,30 @@ img {
     background: var(--panel);
     border: 1px solid var(--border);
     border-radius: 10px;
-    padding: 10px 12px;
+    padding: 16px 12px;
     color: var(--muted);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.skills li:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 194, 255, 0.06);
+}
+
+.skill-icon {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+}
+
+.skills li span {
+    font-size: 14px;
+    font-weight: 500;
 }
 
 /* Contact */
