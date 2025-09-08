@@ -165,6 +165,16 @@ img {
     align-items: center;
 }
 
+.metadados a {
+    color: var(--text);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.metadados a:hover {
+    color: var(--brand);
+}
+
 .midia-destaque {
     height: 420px;
     border-radius: var(--radius);
@@ -297,7 +307,7 @@ img {
     grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 16px;
     max-width: 800px;
-    margin: 0 auto;
+    margin: 0;
 }
 
 .habilidades li {
@@ -394,6 +404,7 @@ section {
     .habilidades {
         grid-template-columns: repeat(3, 1fr);
         max-width: 600px;
+        margin: 0;
     }
     .destaque {
         grid-template-columns: 1fr;
@@ -433,6 +444,7 @@ section {
         grid-template-columns: repeat(2, 1fr);
         max-width: 400px;
         gap: 12px;
+        margin: 0;
     }
     .habilidades li {
         min-height: 100px;
