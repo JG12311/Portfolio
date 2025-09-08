@@ -91,15 +91,15 @@ img {
 }
 
 .menu-navegacao a {
-    color: var(--muted);
+    color: var(--text);
     text-decoration: none;
     transition: color 0.2s ease;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 15px;
 }
 
 .menu-navegacao a:hover {
-    color: var(--text);
+    color: var(--brand);
 }
 
 /* Link ativo */
@@ -295,21 +295,25 @@ img {
     padding: 0;
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 12px;
+    gap: 16px;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
-.skills li {
+.habilidades li {
     background: var(--panel);
     border: 1px solid var(--border);
-    border-radius: 10px;
-    padding: 16px 12px;
+    border-radius: 12px;
+    padding: 20px 16px;
     color: var(--muted);
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 8px;
+    gap: 12px;
     text-align: center;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
+    min-height: 120px;
+    justify-content: center;
 }
 
 .habilidades li:hover {
@@ -318,14 +322,16 @@ img {
 }
 
 .icone-habilidade {
-    width: 32px;
-    height: 32px;
+    width: 40px;
+    height: 40px;
     object-fit: contain;
+    filter: brightness(1.1);
 }
 
 .habilidades li span {
-    font-size: 14px;
-    font-weight: 500;
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--text);
 }
 
 /* Contact */
@@ -387,6 +393,7 @@ section {
     }
     .habilidades {
         grid-template-columns: repeat(3, 1fr);
+        max-width: 600px;
     }
     .destaque {
         grid-template-columns: 1fr;
@@ -424,6 +431,16 @@ section {
     }
     .habilidades {
         grid-template-columns: repeat(2, 1fr);
+        max-width: 400px;
+        gap: 12px;
+    }
+    .habilidades li {
+        min-height: 100px;
+        padding: 16px 12px;
+    }
+    .icone-habilidade {
+        width: 32px;
+        height: 32px;
     }
     .texto-destaque h1 {
         font-size: 32px;
