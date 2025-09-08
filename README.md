@@ -1,7 +1,5 @@
 # Portfólio Pessoal - João Gabriel Breganon Ferreira
 
-![Portfolio Preview](images/foto.jpg)
-
 Um portfólio pessoal moderno e responsivo desenvolvido com HTML, CSS e JavaScript, focado em acessibilidade e performance.
 
 ## 📋 Sobre o Projeto
