@@ -11,11 +11,11 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="site-header">
-        <div class="container nav">
-            <a href="#inicio" class="brand" aria-label="Ir para o início">João Gabriel</a>
-            <button class="nav-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
-            <nav class="nav-menu" aria-label="Navegação principal">
+    <header class="cabecalho-site">
+        <div class="container navegacao">
+            <a href="#inicio" class="marca" aria-label="Ir para o início">João Gabriel</a>
+            <button class="toggle-navegacao" aria-label="Abrir menu" aria-expanded="false">☰</button>
+            <nav class="menu-navegacao" aria-label="Navegação principal">
                 <a href="#sobre">Sobre</a>
                 <a href="#experiencia">Experiência</a>
                 <a href="#projetos">Projetos</a>
@@ -26,25 +26,25 @@
     </header>
 
     <main id="inicio">
-        <section class="hero container">
-            <div class="hero-text">
+        <section class="destaque container">
+            <div class="texto-destaque">
                 <h1>Olá, eu sou <span>João Gabriel Breganon Ferreira</span></h1>
-                <p class="subtitle">Estudante de Engenharia da Computação na PUC-Campinas, interessado em desenvolvimento web e em construir projetos com boa performance e acessibilidade.</p>
-                <div class="hero-ctas">
-                    <a href="#projetos" class="btn primary">Ver projetos</a>
+                <p class="subtitulo">Estudante de Engenharia da Computação na PUC-Campinas, interessado em desenvolvimento web e em construir projetos com boa performance e acessibilidade.</p>
+                <div class="botoes-destaque">
+                    <a href="#projetos" class="botao primario">Ver projetos</a>
                 </div>
-                <div class="meta">
+                <div class="metadados">
                     <span>Ainda sem experiência profissional</span>
                     <span>•</span>
                     <a href="#contato">Aberto a estágio e projetos</a>
                 </div>
             </div>
-            <div class="hero-media">
-                <img src="images/foto.jpg" alt="Foto de João Gabriel Breganon Ferreira" class="hero-photo">
+            <div class="midia-destaque">
+                <img src="images/foto.jpg" alt="Foto de João Gabriel Breganon Ferreira" class="foto-destaque">
             </div>  
         </section>
 
-        <section id="sobre" class="section container">
+        <section id="sobre" class="secao container">
             <h2>Sobre</h2>
             <p>
                 Estudante de <strong>Engenharia de Computação</strong> na <strong>PUC-Campinas</strong> dedicado a aplicar princípios de engenharia para resolver problemas complexos. Desenvolvo soluções de software com competências que abrangem o front-end (JavaScript, HTML, CSS) e o back-end (Python, C/C++), sempre com foco na criação de sistemas eficientes e escaláveis.
@@ -52,10 +52,10 @@
                 Organizo e executo projetos utilizando Metodologias Ágeis (Scrum e Kanban), com o suporte de ferramentas como o Jira para garantir um fluxo de trabalho otimizado e a entrega de resultados. Meu objetivo é aplicar meu conhecimento técnico e minha capacidade de organização para contribuir ativamente no ciclo de vida de projetos inovadores.</p>
         </section>
 
-        <section id="experiencia" class="section container">
+        <section id="experiencia" class="secao container">
             <h2>Experiência</h2>
-            <div class="timeline">
-                <article class="job">
+            <div class="linha-tempo">
+                <article class="trabalho">
                     <header>
                         <h3>Em busca da primeira oportunidade</h3>
                         <span>Atual</span>
@@ -68,81 +68,70 @@
             </div>
         </section>
 
-        <section id="projetos" class="section container">
+        <section id="projetos" class="secao container">
             <h2>Projetos</h2>
-            <div class="grid projects">
-                <article class="card">
-                    <div class="card-header">
+            <div class="grid projetos">
+                <article class="cartao">
+                    <div class="cabecalho-cartao">
                         <h3>Portfólio Pessoal</h3>
-                        <span class="pill">HTML • CSS • JS</span>
+                        <span class="etiqueta">HTML • CSS • JS</span>
                     </div>
                     <p>Este site. Foco em layout responsivo, acessibilidade e organização.</p>
-                </article>
-                <article class="card">
-                    <div class="card-header">
-                        <h3>Projeto Exemplo</h3>
-                        <span class="pill">Em construção</span>
-                    </div>
-                    <p>Reservado para adicionar um projeto futuro com link de demo e repositório.</p>
-                    <div class="card-actions">
-                        <a href="#">Demo</a>
-                        <a href="#">Código</a>
-                    </div>
                 </article>
             </div>
         </section>
 
-        <section id="skills" class="section container">
+        <section id="skills" class="secao container">
             <h2>Skills</h2>
-            <ul class="skills">
+            <ul class="habilidades">
                 <li>
-                    <img src="images/HTML5_logo_and_wordmark.svg.png" alt="HTML5" class="skill-icon">
+                    <img src="images/HTML5_logo_and_wordmark.svg.png" alt="HTML5" class="icone-habilidade">
                     <span>HTML</span>
                 </li>
                 <li>
-                    <img src="images/CSS3_logo_and_wordmark.svg.png" alt="CSS3" class="skill-icon">
+                    <img src="images/CSS3_logo_and_wordmark.svg.png" alt="CSS3" class="icone-habilidade">
                     <span>CSS</span>
                 </li>
                 <li>
-                    <img src="images/JavaScript-logo.png" alt="JavaScript" class="skill-icon">
+                    <img src="images/JavaScript-logo.png" alt="JavaScript" class="icone-habilidade">
                     <span>JavaScript</span>
                 </li>
                 <li>
-                    <img src="images/Python-logo-notext.svg.png" alt="Python" class="skill-icon">
+                    <img src="images/Python-logo-notext.svg.png" alt="Python" class="icone-habilidade">
                     <span>Python</span>
                 </li>
                 <li>
-                    <img src="images/ISO_C++_Logo.svg.png" alt="C++" class="skill-icon">
+                    <img src="images/ISO_C++_Logo.svg.png" alt="C++" class="icone-habilidade">
                     <span>C++</span>
                 </li>
                 <li>
-                    <img src="images/png-clipart-blue-and-white-c-logo-the-c-programming-language-computer-programming-computer-icons-programmer-blue-angle.png" alt="C" class="skill-icon">
+                    <img src="images/png-clipart-blue-and-white-c-logo-the-c-programming-language-computer-programming-computer-icons-programmer-blue-angle.png" alt="C" class="icone-habilidade">
                     <span>C</span>
                 </li>
                 <li>
-                    <img src="images/Git_icon.svg.png" alt="Git" class="skill-icon">
+                    <img src="images/Git_icon.svg.png" alt="Git" class="icone-habilidade">
                     <span>Git</span>
                 </li>
                 <li>
-                    <img src="images/githubimage.png" alt="GitHub" class="skill-icon">
+                    <img src="images/githubimage.png" alt="GitHub" class="icone-habilidade">
                     <span>GitHub</span>
                 </li>  
 
             </ul>
         </section>
 
-        <section id="contato" class="section container">
+        <section id="contato" class="secao container">
             <h2>Contato</h2>
             <p>Estou aberto a oportunidades de estágio e projetos.</p>
-            <div class="contact">
-                <a class="btn primary" href="mailto:fjoao28370@gmail.com">Enviar email</a>
-                <a class="btn" href="https://www.linkedin.com/in/jo%C3%A3o-gabriel-breganon-ferreira-341679343" target="_blank" rel="noopener">LinkedIn</a>
-                <a class="btn" href="https://github.com/JG12311" target="_blank" rel="noopener">GitHub</a>
+            <div class="contato">
+                <a class="botao primario" href="mailto:fjoao28370@gmail.com">Enviar email</a>
+                <a class="botao" href="https://www.linkedin.com/in/jo%C3%A3o-gabriel-breganon-ferreira-341679343" target="_blank" rel="noopener">LinkedIn</a>
+                <a class="botao" href="https://github.com/JG12311" target="_blank" rel="noopener">GitHub</a>
             </div>
         </section>
     </main>
 
-    <footer class="site-footer">
+    <footer class="rodape-site">
         <div class="container">
             <p>© <span id="year"></span> João Gabriel Breganon Ferreira. Todos os direitos reservados.</p>
         </div>

@@ -1,6 +1,6 @@
 // Toggle de navegação para dispositivos móveis
-const toggle = document.querySelector('.nav-toggle');
-const menu = document.querySelector('.nav-menu');
+const toggle = document.querySelector('.toggle-navegacao');
+const menu = document.querySelector('.menu-navegacao');
 
 if (toggle && menu) {
   toggle.addEventListener('click', () => {
