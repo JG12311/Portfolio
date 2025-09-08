@@ -28,6 +28,8 @@ body {
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 img {
@@ -39,6 +41,7 @@ img {
     max-width: var(--container);
     margin: 0 auto;
     padding: 0 20px;
+    width: 100%;
 }
 
 /* Header */
@@ -49,6 +52,7 @@ img {
     background: rgba(11, 13, 16, 0.8);
     border-bottom: 1px solid var(--border);
     z-index: 1000;
+    width: 100%;
 }
 
 .navegacao {
@@ -56,6 +60,10 @@ img {
     align-items: center;
     justify-content: space-between;
     height: var(--header-h);
+    width: 100%;
+    max-width: var(--container);
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 .marca {
@@ -63,6 +71,8 @@ img {
     text-decoration: none;
     font-weight: 700;
     letter-spacing: 0.2px;
+    font-size: 18px;
+    white-space: nowrap;
 }
 
 .toggle-navegacao {
@@ -80,35 +90,38 @@ img {
     align-items: center;
 }
 
-.nav-menu a {
+.menu-navegacao a {
     color: var(--muted);
     text-decoration: none;
     transition: color 0.2s ease;
+    font-weight: 500;
+    font-size: 15px;
 }
 
-.nav-menu a:hover {
+.menu-navegacao a:hover {
     color: var(--text);
 }
 
 /* Link ativo */
-.nav-menu a[aria-current="page"] {
+.menu-navegacao a[aria-current="page"] {
     color: var(--text);
     text-decoration: underline;
     text-underline-offset: 6px;
 }
-.nav-menu .cta[aria-current="page"] {
+.menu-navegacao .cta[aria-current="page"] {
     filter: brightness(0.9);
 }
 
-.nav-menu .cta {
+.menu-navegacao .cta {
     color: #001018;
     background: var(--brand);
     padding: 10px 14px;
     border-radius: 8px;
     border: 1px solid transparent;
+    font-weight: 600;
 }
 
-.nav-menu .cta:hover {
+.menu-navegacao .cta:hover {
     background: var(--brand-600);
 }
 
@@ -119,6 +132,8 @@ img {
     gap: 40px;
     align-items: center;
     padding: 72px 20px;
+    min-height: 80vh;
+    justify-content: center;
 }
 
 .texto-destaque h1 {
@@ -375,6 +390,12 @@ section {
     }
     .destaque {
         grid-template-columns: 1fr;
+        text-align: center;
+        padding: 60px 20px;
+    }
+    .midia-destaque {
+        margin: 0 auto;
+        max-width: 300px;
     }
 }
 
@@ -393,8 +414,9 @@ section {
         flex-direction: column;
         padding: 12px 20px 16px;
         gap: 12px;
+        backdrop-filter: saturate(160%) blur(10px);
     }
-    .nav-menu[data-open="true"] {
+    .menu-navegacao[data-open="true"] {
         display: flex;
     }
     .grid.projetos {
@@ -405,5 +427,16 @@ section {
     }
     .texto-destaque h1 {
         font-size: 32px;
+    }
+    .destaque {
+        padding: 40px 20px;
+        min-height: 70vh;
+    }
+    .midia-destaque {
+        max-width: 280px;
+        height: 350px;
+    }
+    .container {
+        padding: 0 16px;
     }
 }
