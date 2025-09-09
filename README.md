@@ -12,7 +12,6 @@
   <a href="https://portfolio-joaobreganon.vercel.app"_blank">
     <img src="https://img.shields.io/badge/Ver%20Deploy-6A0DAD?style=for-the-badge&logo=vercel&logoColor=white" alt="Ver Deploy"/>
   </a>
----
 
 ## 📋 Sobre o Projeto
 
