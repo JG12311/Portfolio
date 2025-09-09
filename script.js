@@ -1,6 +1,6 @@
 // Toggle de navegação para dispositivos móveis
-const toggle = document.querySelector('.toggle-navegacao');
-const menu = document.querySelector('.menu-navegacao');
+const toggle = document.querySelector('.nav-toggle'); 
+const menu = document.querySelector('.nav-menu'); 
 
 if (toggle && menu) {
   toggle.addEventListener('click', () => {
@@ -17,7 +17,6 @@ if (toggle && menu) {
   });
 }
 
-// Rolar suave é gerenciado pelo CSS (scroll-behavior). Garantir o foco após o salto para acessibilidade.
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener('click', function (e) {
     const targetId = this.getAttribute('href');
