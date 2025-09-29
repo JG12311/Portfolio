@@ -11,6 +11,8 @@
     --radius: 12px;
     --container: 1200px;
     --header-h: 64px;
+    --section-y: 56px;       /* espaçamento vertical padrão das seções */
+    --section-y-sm: 40px;    /* espaçamento vertical em telas pequenas */
 }
 
 * {
@@ -131,7 +133,7 @@ img {
     grid-template-columns: 1.1fr 0.9fr;
     gap: 40px;
     align-items: center;
-    padding: 72px 20px;
+    padding: 72px 20px var(--section-y);
     min-height: 80vh;
     justify-content: center;
 }
@@ -188,6 +190,8 @@ img {
     margin-left: auto;
 }
 
+/* centralização aplicada apenas em breakpoints responsivos */
+
 .hero-media .hero-photo {
     width: 100%;
     height: 100%;
@@ -200,7 +204,7 @@ img {
 
 /* Sections */
 .section {
-    padding: 64px 20px;
+    padding: var(--section-y) 20px;
     border-top: 1px solid var(--border);
 }
 
@@ -409,11 +413,27 @@ section {
     .hero {
         grid-template-columns: 1fr;
         text-align: center;
-        padding: 60px 20px;
+        padding: 60px 20px var(--section-y);
     }
     .hero-media {
         margin: 0 auto;
         max-width: 300px;
+    }
+    .hero-buttons {
+        justify-content: center;
+    }
+    .metadata {
+        justify-content: center;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+    .hero-text {
+        margin: 0 auto;
+    }
+    .subtitle {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
@@ -433,6 +453,9 @@ section {
         padding: 12px 20px 16px;
         gap: 12px;
         backdrop-filter: saturate(160%) blur(10px);
+    }
+    .nav-menu a {
+        padding: 10px 0;
     }
     .nav-menu[data-open="true"] {
         display: flex;
@@ -455,17 +478,61 @@ section {
         height: 32px;
     }
     .hero-text h1 {
-        font-size: 32px;
+        font-size: 32px; /* volta ao tamanho anterior */
+        line-height: 1.2;
+        margin-bottom: 10px;
+    }
+    /* remover quebra forçada do nome no mobile */
+    .subtitle {
+        font-size: 15px;
+        line-height: 1.7;
+        margin-bottom: 20px;
+    }
+    .hero-buttons {
+        margin-bottom: 16px;
+        justify-content: center;
+        flex-wrap: wrap;
     }
     .hero {
-        padding: 40px 20px;
+        padding: 40px 20px var(--section-y-sm);
         min-height: 70vh;
     }
     .hero-media {
-        max-width: 280px;
-        height: 350px;
+        max-width: 260px;
+        height: 330px;
+        margin-top: 16px;
+        margin-bottom: 16px; /* afasta do traço da próxima seção */
     }
     .container {
         padding: 0 16px;
+    }
+    .section {
+        padding: var(--section-y-sm) 16px;
+    }
+    .section h2 {
+        margin-top: 8px;
+        margin-bottom: 18px;
+    }
+    .metadata {
+        gap: 10px;
+        flex-wrap: wrap;
+        font-size: 14px;
+        margin: 4px 0 8px;
+        justify-content: center;
+        text-align: center;
+    }
+    .hero-text {
+        margin: 0 auto;
+    }
+    .skills-list {
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+        max-width: none; /* evita limitar a grade e encolher os cards */
+        gap: 12px;
+        margin: 0 auto; /* centraliza dentro do container */
+        justify-items: stretch; /* cards ocupam toda a coluna */
+    }
+    .skills-list li {
+        width: 100%; /* cards com mesma largura nas colunas */
     }
 }
